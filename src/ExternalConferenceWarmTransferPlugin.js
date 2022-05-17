@@ -1,4 +1,4 @@
-import { FlexPlugin } from 'flex-plugin';
+import { FlexPlugin } from '@twilio/flex-plugin';
 import React from 'react';
 import ParticipantActionsButtons from './components/ParticipantActionsButtons';
 import ParticipantName from './components/ParticipantName';

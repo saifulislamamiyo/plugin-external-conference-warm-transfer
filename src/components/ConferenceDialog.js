@@ -46,7 +46,10 @@ class ConferenceDialog extends React.Component {
 
   addConferenceParticipant = async () => {
     const to = this.state.conferenceTo;
-    const { from, task, task: { taskSid } } = this.props;
+    const { task, task: { taskSid, attributes } } = this.props;
+    console.log('★task★', task);
+    // YOUR_TWILIO_NUMBER from task.attributes
+    const from = attributes.to;
     const conference = task && (task.conference || {});
     const { conferenceSid } = conference;
 
